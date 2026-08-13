@@ -8,7 +8,7 @@ This is a quiz application about Jason Mraz. Users enter their name to start the
 - Five multiple choice questions with three possible answers each
 - A progress indicator showing which question the user is answering
 - Score tracking that is displayed at the end of the quiz
-- Different messages based on the score and username
+- Different messages based on the score followed by the username
 - Option to play again
 
 ### Functionality
