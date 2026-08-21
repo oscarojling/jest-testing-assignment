@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Progress from "@/components/Progress";
 import Question from "@/components/Question";
 import Answers from "@/components/Answers";
+import Results from "@/components/Results";
 
 export default function Home() {
   const [hasStarted, setHasStarted] = useState<boolean>(false);
@@ -25,6 +26,12 @@ export default function Home() {
     setQuestionIndex(questionIndex + 1);
   };
 
+  const handleRestart = () => {
+    setQuestionIndex(0);
+    setHasStarted(true);
+    setScore(0);
+  };
+
   const isFinished = questionIndex >= questions.length;
 
   return (
@@ -33,10 +40,24 @@ export default function Home() {
       {!hasStarted && <StartScreen handleStart={handleStart} />}
       {hasStarted && !isFinished && (
         <>
-        <Progress questionIndex={questionIndex} totalQuestions={questions.length} /> 
-        <Question question={currentQuestion.question} />
-        <Answers answers={currentQuestion.answers} handleAnswer={handleAnswer} />
+          <Progress
+            questionIndex={questionIndex}
+            totalQuestions={questions.length}
+          />
+          <Question question={currentQuestion.question} />
+          <Answers
+            answers={currentQuestion.answers}
+            handleAnswer={handleAnswer}
+          />
         </>
+      )}
+      {isFinished && (
+        <Results
+          score={score}
+          totalQuestions={questions.length}
+          username={username}
+          handleReset={handleRestart}
+        />
       )}
     </div>
   );
