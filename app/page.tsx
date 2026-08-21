@@ -17,16 +17,15 @@ export default function Home() {
     setHasStarted(true);
     setUsername(username);
   };
-  const currentQuestion = questions[questionIndex];
 
   const handleAnswer = (index: number) => {
-    if (index === currentQuestion.correctAnswer) {
+    if (index === questions[questionIndex].correctAnswer) {
       setScore(score + 1);
     }
     setQuestionIndex(questionIndex + 1);
   };
 
-  const handleRestart = () => {
+  const handleReset = () => {
     setQuestionIndex(0);
     setHasStarted(true);
     setScore(0);
@@ -44,9 +43,9 @@ export default function Home() {
             questionIndex={questionIndex}
             totalQuestions={questions.length}
           />
-          <Question question={currentQuestion.question} />
+          <Question question={questions[questionIndex].question} />
           <Answers
-            answers={currentQuestion.answers}
+            answers={questions[questionIndex].answers}
             handleAnswer={handleAnswer}
           />
         </>
@@ -56,7 +55,7 @@ export default function Home() {
           score={score}
           totalQuestions={questions.length}
           username={username}
-          handleReset={handleRestart}
+          handleReset={handleReset}
         />
       )}
     </div>
