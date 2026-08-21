@@ -22,7 +22,7 @@ const Results = ({
   }
   return (
     <div>
-      <p>{`your score is ${score}/${totalQuestions}`}</p>
+      <p>{`Game over! your score is ${score}/${totalQuestions}`}</p>
       <p>{message}</p>
       <button onClick={handleReset}>Play again</button>
     </div>
