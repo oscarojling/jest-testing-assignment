@@ -21,10 +21,10 @@ const Results = ({
     message = `impressive, ${username}!`;
   }
   return (
-    <div>
+    <div className="text-center">
       <p>{`Game over! your score is ${score}/${totalQuestions}`}</p>
-      <p>{message}</p>
-      <button onClick={handleReset}>Play again</button>
+      <p className="mt-4 mb-6">{message}</p>
+      <button className="bg-blue-500 text-white rounded-2xl p-2 mt-6" onClick={handleReset}>Play again</button>
     </div>
   );
 };

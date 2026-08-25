@@ -34,7 +34,7 @@ export default function Home() {
   const isFinished = questionIndex >= questions.length;
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col items-center justify-center gap-4 p-6">
       <Header />
       {!hasStarted && <StartScreen handleStart={handleStart} />}
       {hasStarted && !isFinished && (

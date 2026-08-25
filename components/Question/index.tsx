@@ -4,7 +4,7 @@ type QuestionProp = {
 
 const Question = ({ question }:QuestionProp) => {
   return (
-    <p data-testid="question">{question}</p>
+    <p className="text-xl text-center mb-4" data-testid="question">{question}</p>
   )
 }
 export default Question
