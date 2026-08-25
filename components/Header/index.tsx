@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <h1>the jason mraz quiz</h1>
+      <h1>Sweden World Cup Quiz | 2026</h1>
     </header>
   );
 };

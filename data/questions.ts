@@ -2,30 +2,30 @@ import type { Question } from "@/types/types";
 
 export const questions: Question[] = [
   {
-    question: "Which state is Jason Mraz originally from?",
-    answers: ["California", "Hawaii", "Virginia"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Apart from making music, what side business does Jason Mraz own?",
-    answers: ["A farm", "A restaurant", "A music school"],
+    question: "Which group did Sweden play in during the 2026 World Cup?",
+    answers: ["Group F", "Group B", "Group D"],
     correctAnswer: 0,
   },
   {
-    question: "What is the title of Jason Mraz’s 2002 debut studio album?",
-    answers: ["Know", "Mr. A-Z", "Waiting for My Rocket to Come"],
-    correctAnswer: 2,
+    question: "Sweden won against Tunisia in their opening game. What was the score?",
+    answers: ["5-1", "4-1", "3-1"],
+    correctAnswer: 0,
   },
-
   {
-    question: "Which song did Jason Mraz NOT win a Grammy for?",
-    answers: ["Make it Mine", "I'm Yours", "Lucky"],
+    question: "Sweden lost to the Neherlands. What was the score?",
+    answers: ["1-4", "1-5", "2-5"],
     correctAnswer: 1,
   },
 
   {
-    question: "In which musical did Jason Mraz make his Broadway debut?",
-    answers: ["Book of Mormon", "Waitress", "Hamilton"],
+    question: "In the last game of the group, Sweden drew against Japan. What was the score?",
+    answers: ["0-0", "2-2", "1-1"],
+    correctAnswer: 2,
+  },
+
+  {
+    question: "In the Round of 32, Sweden lost to France. What was the score?",
+    answers: ["2-0", "3-0", "1-0"],
     correctAnswer: 1,
   },
 ];
