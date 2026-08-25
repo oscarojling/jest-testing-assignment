@@ -14,7 +14,7 @@ describe("The Header", () => {
   });
   test("displays the project title", () => {
     render(<Header />);
-    const pageTitle = screen.getByText(/the jason mraz quiz/i);
+    const pageTitle = screen.getByText(/Sweden World Cup Quiz | 2026/i);
     expect(pageTitle).toBeInTheDocument();
   });
 });
