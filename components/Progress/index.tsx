@@ -5,7 +5,7 @@ type ProgressProps = {
 
 const Progress = ({ questionIndex, totalQuestions }: ProgressProps) => {
   return (
-    <span>{`question ${questionIndex + 1}/${totalQuestions}`}</span>
+    <span className="text-xl text-center mb-4 font-bold">{`Question ${questionIndex + 1}/${totalQuestions}`}</span>
   );
 };
 
