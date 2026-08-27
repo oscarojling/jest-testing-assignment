@@ -28,7 +28,14 @@ const StartScreen = ({ handleStart }: StartScreenProps) => {
         value={username}
         className="w-full p-2 mb-3 bg-gray-200"
       ></input>
-      {username !== "" && <button onClick={handleClick} className="w-full bg-yellow-600 text-white rounded p-2 cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-yellow-700">Start</button>}
+      {username !== "" && (
+        <button
+          onClick={handleClick}
+          className="w-full bg-yellow-600 text-white rounded p-2 cursor-pointer transition-transform duration-200 hover:scale-105 hover:bg-yellow-700"
+        >
+          Start
+        </button>
+      )}
     </div>
   );
 };
