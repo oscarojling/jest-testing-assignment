@@ -1,6 +1,6 @@
-# Jest Testing - The Jason Mraz Quiz
+# Jest Testing - The Sweden World Cup 2026 Quiz
 
-This is a quiz application about Jason Mraz. Users enter their name to start the quiz, answer a few multiple choice questions, and receive a final score. At the end of the quiz, the user can also restart the quiz. The main purpose of this project is to practice writing tests in Jest.
+This quiz was originally about Jason Mraz by Claudia. I changed it to a Sweden World Cup 2026 "guess the score" quiz. But the features stay the same as the original, except with different questions and styling. No additional tests were required. 
 
 ### Features
 
